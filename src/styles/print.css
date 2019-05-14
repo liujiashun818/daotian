@@ -1,0 +1,38 @@
+@media print /*--This is for Print--*/ {
+    * {
+        color: black !important;
+        border-color: black !important;
+    }
+
+    body {
+        display: inherit;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    .print {
+        display: block !important;
+    }
+
+    .canvas {
+        display: none;
+    }
+
+    .print-image {
+        display: inline-block;
+        width: 128px;
+        height: 128px;
+    }
+
+    .print-header {
+        text-align: center !important;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+
+

@@ -1,0 +1,121 @@
+/**
+ * 定义布局样式，菜单导航，头部导航及底部区域
+ */
+
+.ant-layout-sider .logo {
+    height: 50px;
+    background: #333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 45px;
+}
+
+.ant-layout-sider .logo.logo-collapsed {
+    justify-content: center;
+    padding-left: 0;
+}
+
+.layout-header {
+    background: rgb(255, 255, 255);
+    padding: 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.ant-layout {
+    background: #f3f3f3;
+    overflow: auto;
+}
+
+.ant-layout-header {
+    height: 50px;
+    line-height: 50px;
+}
+
+.ant-layout-sider-collapsed {
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.menu-trigger {
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 16px;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.menu-trigger:hover {
+    color: #108ee9;
+}
+
+.ant-menu-submenu-title {
+    font-size: 14px !important;
+}
+
+.ant-breadcrumb {
+    display: inline-block;
+}
+
+.ant-menu-item-group-title {
+    padding-left: 48px !important;
+    color: #777 !important;
+}
+
+.ant-menu-vertical .ant-menu-item-group-title {
+    padding-left: 16px !important;
+    color: #777 !important;
+}
+
+.ant-menu-vertical .ant-menu-item-group-list .ant-menu-item {
+    padding-left: 16px !important;
+}
+
+.ant-menu-inline .ant-menu-item-group-list .ant-menu-item {
+    height: 28px;
+    line-height: 28px;
+}
+
+.ant-menu-submenu-vertical > .ant-menu {
+    min-width: 120px !important;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+    background-color: #108ee9;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected a {
+    color: #FFFFFF !important;
+}
+
+.layout-setting {
+    display: inline-block;
+    float: right;
+}
+
+.setting-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ant-menu-vertical.ant-menu-inline-collapsed .ant-menu-item,
+.ant-menu-vertical.ant-menu-inline-collapsed .ant-menu-submenu .ant-menu-submenu-title {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    padding: 10px 0;
+}
+
+.ant-menu-submenu-vertical .ant-menu-sub {
+    padding: 15px 0;
+}
+
+.ant-menu-submenu-vertical .ant-menu-sub .ant-menu-item {
+    padding-left: 16px;
+    justify-content: flex-start !important;
+}

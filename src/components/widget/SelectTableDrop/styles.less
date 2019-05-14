@@ -1,0 +1,25 @@
+.select-table {
+  position: relative;
+  .table-content {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 1000;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+  .arrow {
+    user-select: none;
+    text-align: left;
+    transition: transform 0.5s;
+  }
+
+  .border-none {
+    .ant-table-small .ant-table-header > table, .ant-table-small .ant-table-body > table {
+      padding: 0;
+      td, th {
+        border: none;
+      }
+    }
+  }
+}

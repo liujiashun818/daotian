@@ -1,0 +1,43 @@
+{
+  "extends": "airbnb",
+  "installedESLint": true,
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "rules": {
+    // 关闭react组件所在文件的扩展名必须是jsx的检查
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    // 关闭React Component缺少Props检查
+    "react/prop-types": [
+      0
+    ],
+    // 关闭props校验时，值不能为object, array和any
+    "react/forbid-prop-types": [
+      0,
+      {
+        "forbid": [
+          "object"
+        ]
+      }
+    ],
+    // 允许使用_开头的标识符
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "_id"
+        ]
+      }
+    ]
+  }
+}
